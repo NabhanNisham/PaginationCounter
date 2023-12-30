@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/PaginationCounter/static/css/main.9f9fae97.css",
-    "main.js": "/PaginationCounter/static/js/main.b3ad62ba.js",
+    "main.js": "/PaginationCounter/static/js/main.e1638b6a.js",
     "index.html": "/PaginationCounter/index.html",
     "main.9f9fae97.css.map": "/PaginationCounter/static/css/main.9f9fae97.css.map",
-    "main.b3ad62ba.js.map": "/PaginationCounter/static/js/main.b3ad62ba.js.map"
+    "main.e1638b6a.js.map": "/PaginationCounter/static/js/main.e1638b6a.js.map"
   },
   "entrypoints": [
     "static/css/main.9f9fae97.css",
-    "static/js/main.b3ad62ba.js"
+    "static/js/main.e1638b6a.js"
   ]
 }
