@@ -41,7 +41,7 @@ const ProductDetails = ({ match }) => {
       </div>
 
       <div className="back-to-list">
-        <Link to="/">Back to Product List</Link>
+        <Link to="/product">Back to Product List</Link>
       </div>
     </div>
   );
