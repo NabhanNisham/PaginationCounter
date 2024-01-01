@@ -77,7 +77,7 @@ const ProductList = () => {
         </select>
       </label>
 
-      <Link to="/PaginationCounter" className="link-to-counter">
+      <Link to="/" className="link-to-counter">
         Go to Counter
       </Link>
     </div>
