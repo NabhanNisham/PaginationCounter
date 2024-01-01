@@ -8,7 +8,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Counter />} />
+        <Route path="/PaginationCounter" element={<Counter />} />
         <Route path="/product" element={<ProductList />} />
         <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
