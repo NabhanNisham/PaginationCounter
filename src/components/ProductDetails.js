@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
-import './ProductDetails.css';
+import '../styles/ProductDetails.css';
 
 const ProductDetails = ({ match }) => {
   const { id } = useParams();
@@ -41,7 +41,7 @@ const ProductDetails = ({ match }) => {
       </div>
 
       <div className="back-to-list">
-        <Link to="/product">Back to Product List</Link>
+        <Link to="/PaginationCounter/product" className='list'>Back to Product List</Link>
       </div>
     </div>
   );

@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import './counter.css'
+import '../styles/counter.css'
 
 const Counter = () => {
     const [count, setCount] = useState(0);
     const [isRunning, setIsRunning] = useState(false);
-    const [isReversed, setIsReversed] = useState(false);
+    const [, setIsReversed] = useState(false);
   
     useEffect(() => {
       let interval;
@@ -46,19 +45,15 @@ const Counter = () => {
       <div className="counter-container">
         <h2>Counter: {count}</h2>
         <div>
-        <button onClick={handleStart} disabled={isRunning} className='start'>
+        <button onClick={handleStart} disabled={isRunning} className='start bttn'>
           Start
         </button>
-        <button onClick={handleStop} disabled={!isRunning} className='stop'>
+        <button onClick={handleStop} disabled={!isRunning} className='stop bttn'>
           Stop
         </button>
-        <button onClick={handleReverse} className='reverse'>Reverse</button>
-        <button onClick={handleClear} className='clear'>Clear</button>
+        <button onClick={handleReverse} className='reverse bttn'>Reverse</button>
+        <button onClick={handleClear} className='clear bttn'>Clear</button>
         </div>  
-
-        <Link to="/product" className="link-to-products">
-          Go to Products
-        </Link>
 
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import './styles.css';
+import '../styles/ProductList.css';
 
 const ProductList = () => {
   const [products, setProducts] = useState([]);
@@ -34,24 +34,24 @@ const ProductList = () => {
   };
 
   if (error) {
-    return <div className="container error">Error: {error}</div>;
+    return <div className="containerr error">Error: {error}</div>;
   }
 
   if (!Array.isArray(products) || products.length === 0) {
-    return <div className="container">No products found.</div>;
+    return <div className="containerr">No products found.</div>;
   }
 
   return (
-    <div className="container">
-      <h2>Product List</h2>
+    <div className="containerr">
+      <h2 className='head'>Product List</h2>
 
       
       <div className="product-grid">
         {products.map((product) => (
           <div key={product.id} className="product">
-            <Link to={`/product/${product.id}`}>
+            <Link to={`/PaginationCounter/product/${product.id}`}>
               <img src={product.thumbnail} alt={product.title} />
-              <p className='title'>{product.title}</p>
+              <p className='titlee'>{product.title}</p>
             </Link>
           </div>
         ))}
@@ -77,9 +77,6 @@ const ProductList = () => {
         </select>
       </label>
 
-      <Link to="/PaginationCounter" className="link-to-counter">
-        Go to Counter
-      </Link>
     </div>
 
     

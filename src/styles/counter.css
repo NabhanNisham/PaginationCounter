@@ -5,10 +5,10 @@
     justify-content: center;
     height: 100vh;
 }
-button {
-    padding: 5px;
+.bttn {
+    padding: 5px 10px;
     margin: 5px;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 .start {
@@ -26,9 +26,3 @@ button {
 .clear {
     background-color: grey;
 }
-
-.link-to-products {
-    text-decoration: none;
-    color: #333;
-    padding: 20px;
-  }
